@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake</title>
+    <link rel="stylesheet" href="tyyli.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div id="container">
+        <header id="head">
+            <h2>Autokorjaamo Hakola</h2>
+            <nav>
+                <a href="index.html">Pääsivu</a>
+                <a href="about.html">Aukioloajat</a>
+                <a href="listing.html">Palvelut ja hinnoittelu</a>
+                <a href="contact.html">Huoltopyyntö</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Huoltopyyntölomake</h1>
+            <form>
+                <label for="nimi">Nimi: *</label><br>
+                <input type="text" id="nimi" name="nimi" required><br>
+                <label for="sposti">Sähköposti: *</label><br>
+                <input type="email" id="sposti" name="sposti" required><br>
+                <label for="numero">Puhelinnumero: *</label><br>
+                <input type="tel" id="numero" name="numero" pattern="\+?[0-9]{1,}" required><br>
+                <label for="rekisteri">Auton rekisterinumero: *</label><br>
+                <input type="text" id="rekisteri" name="rekisteri" pattern="[A-ZÖÄÅ]{2,3}-[1-9][0-9]{0,2}" required><br>
+                <label for="kuvaus">Vian kuvaus: *</label><br>
+                <textarea rows="5" cols="50" name="kuvaus" id="kuvaus" required></textarea><br>
+                <label for="paiva">Toivottu päivämäärä: *</label><br>
+                <input type="date" id="paiva" name="paiva" required><br>
+                <label for="paiva">Soitamme takaisin vahvistaaksemme päivän.</label><br>
+                <br>
+                <input type="submit" name="submit" id="lah">
+            </form>
+        </main>
+        <footer id="foot">
+            <p>Yhteystiedot:</p>
+            <p>Puhelin nro: 045 932 202</p>
+            <p>Sähköposti: pertti.hakola@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>

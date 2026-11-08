@@ -1,0 +1,12 @@
+main {
+    padding: 10px;
+    flex: 1;
+}
+
+#lah {
+    background-color: rgb(201, 151, 26);
+    border-radius: 10px;
+    width: 100px;
+    border: 2px solid black;
+    font-weight: bold;
+}
